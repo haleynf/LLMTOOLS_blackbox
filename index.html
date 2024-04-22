@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Photography Blog</title>
+  <style>
+    body {
+      background-color: purple;
+      color: white;
+    }
+    .image-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    .image-item {
+      margin: 10px;
+      width: 300px;
+      height: 200px;
+    }
+    .image-caption {
+      text-align: center;
+    }
+    header {
+      background-color: #8B008B;
+      padding: 10px;
+      text-align: center;
+    }
+    footer {
+      background-color: #8B008B;
+      padding: 10px;
+      text-align: center;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+    }
+    a {
+      color: white;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>
+      <a href="#stories">Stories</a> |
+      <a href="#images">Images</a> |
+      <a href="#about">About</a>
+    </h1>
+  </header>
+  <div id="stories">
+    <h1>Stories</h1>
+    <p>Here is where you can find all of our stories about photography and the places we've been.</p>
+  </div>
+  <div id="images">
+    <h1>Images</h1>
+    <div class="image-container">
+      <div class="image-item">
+        <img src="https://source.unsplash.com/random/300x200?landscape" alt="Landscape 1">
+        <div class="image-caption">A beautiful landscape image taken in the mountains</div>
+      </div>
+      <!-- Repeat the above div for 9 more images -->
+    </div>
+  </div>
+  <div id="about">
+    <h1>About</h1>
+    <p>Here is where you can learn more about us and our photography.</p>
+  </div>
+  <footer>
+    <div>Copyright © 2022</div>
+    <div>Contact information</div>
+    <div>
+      <a href="https://www.facebook.com/">Facebook</a> |
+      <a href="https://www.twitter.com/">Twitter</a> |
+      <a href="https://www.instagram.com/">Instagram</a>
+    </div>
+  </footer>
+</body>
+</html>
